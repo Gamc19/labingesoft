@@ -1,0 +1,31 @@
+Para este proyecto de la empresa Cyberdyne System Corporation, optaremos por utilizar la Arquitectura Limpia, ya que proporciona una estructura clara y modular que separa las preocupaciones y facilita la mantenibilidad y escalabilidad del sistema.
+
+monitoring-system/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   ├── com/
+│   │   │   │   ├── example/
+│   │   │   │   │   ├── monitoring/
+│   │   │   │   │   │   ├── domain/
+│   │   │   │   │   │   │   ├── Server.java
+│   │   │   │   │   │   │   ├── Metric.java
+│   │   │   │   │   │   │   ├── Alert.java
+│   │   │   │   │   │   ├── usecase/
+│   │   │   │   │   │   │   ├── RetrieveServerMetricsUseCase.java
+│   │   │   │   │   │   │   ├── CreateAlertUseCase.java
+│   │   │   │   │   │   │   ├── UpdateMetricUseCase.java
+│   │   │   │   │   │   ├── repository/
+│   │   │   │   │   │   │   ├── ServerRepository.java
+│   │   │   │   │   │   │   ├── MetricRepository.java
+│   │   │   │   │   │   │   ├── AlertRepository.java
+│   │   │   │   │   │   ├── presentation/
+│   │   │   │   │   │   │   ├── ConsolePresenter.java
+│   │   │   │   │   │   │   ├── WebPresenter.java
+│   │   │   │   │   │   ├── controller/
+│   │   │   │   │   │   │   ├── RestServerController.java
+│   │   │   │   │   │   │   ├── RestMetricController.java
+│   │   │   │   │   │   │   ├── RestAlertController.java
+│   │   │   │   │   │   │   ├── WebServerController.java
+│   │   │   ├── resources/
+│   │   │   │   ├── application.properties
